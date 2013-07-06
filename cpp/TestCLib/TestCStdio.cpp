@@ -2,23 +2,7 @@
 #include <cstdio>
 #include <cstdlib>
 
-void operationOnFiles();
-void fileAccess();
-void formattedInputOuput();
-void characterInputOutput();
-void directInputOutput();
-void filePositioning();
-
-int main(int argn, char** argv)
-{
-	// operationOnFiles();
-	// fileAccess();
-	// formattedInputOuput();
-	// characterInputOutput();
-	// directInputOutput();
-	filePositioning();
-	return 0;
-}
+#include "TestCStdio.h"
 
 void operationOnFiles() {
 

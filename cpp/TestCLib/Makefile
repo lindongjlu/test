@@ -1,10 +1,10 @@
 CXXFLAGS =	-O2 -g -Wall -fmessage-length=0
 
-OBJS =		TestCStdio.o
+OBJS =		TestCLib.o TestCStdio.o TestCStdlib.o
 
 LIBS =
 
-TARGET =	TestCStdio.exe
+TARGET =	TestCLib.exe
 
 $(TARGET):	$(OBJS)
 	$(CXX) -o $(TARGET) $(OBJS) $(LIBS)

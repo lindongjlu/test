@@ -10,6 +10,12 @@ int main(int argn, char** argv)
 	// formattedInputOuput();
 	// characterInputOutput();
 	// directInputOutput();
-	filePositioning();
+	// filePositioning();
+	// stringConversion();
+	// pseudoRandom();
+	// dynamicMemoryManagement();
+	// environment();
+	// searchingAndSorting();
+	integerArithmethics();
 	return 0;
 }

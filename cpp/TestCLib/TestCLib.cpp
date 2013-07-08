@@ -2,6 +2,7 @@
 #include "TestCStdio.h"
 #include "TestCStdlib.h"
 #include "TestCString.h"
+#include "TestCTime.h"
 
 
 int main(int argn, char** argv)
@@ -27,8 +28,10 @@ int main(int argn, char** argv)
 	// concatenation();
 	// comparison();
 	// searching();
-	other();
+	// other();
 
-
+	/* ctime */
+	// timeManipulation();
+	conversion();
 	return 0;
 }

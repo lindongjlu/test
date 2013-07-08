@@ -23,7 +23,12 @@ int main(int argn, char** argv)
 	// integerArithmethics();
 
 	/* cstring */
-	copying();
+	// copying();
+	// concatenation();
+	// comparison();
+	// searching();
+	other();
+
 
 	return 0;
 }

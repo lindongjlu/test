@@ -4,6 +4,8 @@ int main(int argn, char** argv) {
 
 	// string
 	// constructs();
-	iterators();
+	// iterators();
+	// capacity();
+	elementAccess();
 	return 0;
 }

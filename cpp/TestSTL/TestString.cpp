@@ -41,5 +41,57 @@ void iterators() {
 		cout << *rit;
 	}
 	cout << endl;
+}
 
+void capacity() {
+
+	string str;
+	str.reserve(15);
+	str = "Test string";
+	cout << "size: " << str.size() << endl;
+	cout << "length: " << str.length() << endl;
+	cout << "capacity: " << str.capacity() << endl;
+	cout << "max_size: " << str.max_size() << endl;
+	cout << "empty: " << str.empty() << endl;
+
+	string str1 = str;
+	string str2 = str;
+	str1.resize(5);
+	str2.resize(15, 'a');
+	cout << str1 << endl;
+	cout << str2 << endl;
+
+	str.clear();
+	cout << "after clear, length: " << str.length() << endl;
+	cout << "after clear, capacity: " << str.capacity() << endl;
+	cout << "after clear, empty: " << str.empty() << endl;
+
+}
+
+void elementAccess() {
+	string str("Test string");
+	size_t i;
+	for (i = 0; i < str.length(); i++) {
+		if (i != 0) {
+			cout << ", ";
+		}
+		cout << "'"<< str[i] << "'";
+	}
+	cout << endl;
+
+	cout << str[1000] << endl; // no range check
+
+	for (i = 0; i < str.length(); i++) {
+		if (i != 0) {
+			cout << ", ";
+		}
+		cout << "'"<< str.at(i) << "'";
+	}
+	cout << endl;
+
+	try {
+		cout << str.at(1000) << endl; // has range check
+	} catch (exception & e) {
+		cout << e.what() << endl;
+	}
 }
